@@ -11,7 +11,7 @@ import com.ltaps.multipleimagepicker.ui.album.AlbumActivity;
 import java.util.ArrayList;
 
 
-public class FishBun {
+public class MIP {
     private static BaseProperty baseProperty;
 
     public static BaseProperty with(Activity activity) {
