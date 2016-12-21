@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v4.content.FileProvider;
 import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
 
@@ -75,7 +76,6 @@ public class PickerController {
 
     public void takePicture(String saveDir) {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
         if (takePictureIntent.resolveActivity(pickerActivity.getPackageManager()) != null) {
             // Create the File where the photo should go
             File photoFile = null;
@@ -88,8 +88,12 @@ public class PickerController {
             }
             // Continue only if the File was successfully created
             if (photoFile != null) {
-                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
-//                Log.d("photoFile path ", String.valueOf(photoFile));
+                //Deprecated as of API 24
+                //takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
+                Uri photoURI = FileProvider.getUriForFile(pickerActivity,
+                        "com.ltaps.multipleimagepicker.provider",
+                        photoFile);
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 pickerActivity.startActivityForResult(takePictureIntent, Define.TAKE_A_PICK_REQUEST_CODE);
             }
         }
@@ -164,7 +168,7 @@ public class PickerController {
 
     //MediaScanning
     public void startFileMediaScan() {
-        pickerActivity.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" + getSavePath())));
+        pickerActivity.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("content://" + getSavePath())));
     }
 
     protected void displayImage(Long bucketId) {
@@ -188,6 +192,7 @@ public class PickerController {
             super.onPostExecute(result);
             pickerActivity.setAdapter(result);
         }
+
     }
 
     @NonNull

@@ -102,7 +102,6 @@ public class PickerActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 pickerController.startFileMediaScan();
                 adapter.addImage(pickerController.getSavePath());
-
             } else {
                 new File(pickerController.getSavePath()).delete();
             }
