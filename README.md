@@ -77,7 +77,7 @@ And add a provider_paths.xml to the xml folder in your res folder.
 ```
 
 ### Releases
-[Release 1.1.1] is the current latest release. This release is considered stable.
+[Release 1.1.2] is the current latest release. This release is considered stable.
 
 
 **Gradle configuration:**
