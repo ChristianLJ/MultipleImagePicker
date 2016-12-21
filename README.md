@@ -3,7 +3,7 @@
 <!--[![Build Status](https://api.travis-ci.org/ChristianLJ/MaterialEditText.svg)](https://travis-ci.org/ChristianLJ/MaterialEditText)-->
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://opensource.org/licenses/Apache2)
 
-MultipleImagePicker is an image picker for Android. 
+MultipleImagePicker is an image picker for Android. With MIP you can select multiple images from the albums on your phone or take new photos with the camera.
 
 MultipleImagePicker is licensed under the friendly [Apache2 licence].
 
