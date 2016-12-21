@@ -21,7 +21,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 
-
 public class PickerGridAdapter extends RecyclerView.Adapter<PickerGridAdapter.ViewHolder> {
     private static final int TYPE_HEADER = Integer.MIN_VALUE;
 

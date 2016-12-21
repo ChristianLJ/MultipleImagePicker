@@ -157,7 +157,7 @@ public class PickerActivity extends AppCompatActivity {
             if (Define.ALBUM_PICKER_COUNT == 1)
                 getSupportActionBar().setTitle(album.bucketName);
             else
-                getSupportActionBar().setTitle(album.bucketName + "(" + String.valueOf(total) + "/" + Define.ALBUM_PICKER_COUNT + ")");
+                getSupportActionBar().setTitle(album.bucketName + " (" + String.valueOf(total) + "/" + Define.ALBUM_PICKER_COUNT + ")");
         }
 
     }
