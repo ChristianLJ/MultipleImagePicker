@@ -57,6 +57,11 @@ public class MIP {
 
         }
 
+        public BaseProperty setProvider(String provider) {
+            Define.PROVIDER = provider;
+            return baseProperty;
+        }
+
         public BaseProperty setPickerCount(int count) {
             if (count <= 0)
                 count = 1;

@@ -90,8 +90,9 @@ public class PickerController {
             if (photoFile != null) {
                 //Deprecated as of API 24
                 //takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
+                String provider = Define.PROVIDER;
                 Uri photoURI = FileProvider.getUriForFile(pickerActivity,
-                        "com.ltaps.multipleimagepicker.provider",
+                        provider,
                         photoFile);
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 pickerActivity.startActivityForResult(takePictureIntent, Define.TAKE_A_PICK_REQUEST_CODE);

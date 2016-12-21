@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 MIP.with(MainActivity.this)
                         .setPickerCount(20)
                         .setPickerSpanCount(3)
+                        .setProvider("app.ltaps.mipdemo.provider")
                         .setActionBarColor(Color.parseColor("#FF5722"), Color.parseColor("#E64A19"))
                         .textOnImagesSelectionLimitReached("Limit Reached!")
                         .textOnNothingSelected("Nothing Selected")
