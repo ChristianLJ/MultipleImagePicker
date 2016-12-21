@@ -21,6 +21,9 @@ android {
     }
 }
 ```
+##### Supported languages:
+- Danish
+- English
 
 #### Screenshots:
 On the way...
