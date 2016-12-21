@@ -26,9 +26,9 @@ android {
 - English
 
 #### Screenshots:
-![Screenshot 1](https://raw.githubusercontent.com/ChristianLJ/MultipleImagePicker/master/documentation/s1.png?w=290)
-![Screenshot 2](https://raw.githubusercontent.com/ChristianLJ/MultipleImagePicker/master/documentation/s2.png?w=290)
-![Screenshot 3](https://raw.githubusercontent.com/ChristianLJ/MultipleImagePicker/master/documentation/s3.png?w=290)
+![Screenshot 1](https://raw.githubusercontent.com/ChristianLJ/MultipleImagePicker/master/documentation/s1.png)
+![Screenshot 2](https://raw.githubusercontent.com/ChristianLJ/MultipleImagePicker/master/documentation/s2.png)
+![Screenshot 3](https://raw.githubusercontent.com/ChristianLJ/MultipleImagePicker/master/documentation/s3.png)
 
 ### Example:
 Use MIP the following way e.g. in a click listener:
