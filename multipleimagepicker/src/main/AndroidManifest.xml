@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ltaps.multipleimagepicker">
+
+    <application>
+        <activity
+            android:name="app.ltaps.multipleimagepicker.ui.album.AlbumActivity"
+            android:label="@string/album"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="app.ltaps.multipleimagepicker.ui.picker.PickerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

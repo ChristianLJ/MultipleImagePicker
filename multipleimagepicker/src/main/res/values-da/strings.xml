@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="album">Album</string>
+    <string name="camera">Kamera</string>
+    <string name="done">Færdig</string>
+    <string name="msg_no_slected">Der er ikke valgt nogen billeder.</string>
+    <string name="str_all_view">Alle billeder</string>
+    <string name="msg_permisssion">Rettighederne blev afvist. Prøv igen.</string>
+
+    <string name="msg_no_image">Der er ingen billeder..</string>
+    <string name="msg_full_image">Du har nået det maksimale antal billeder.</string>
+    <string name="image">Image</string>
+</resources>
